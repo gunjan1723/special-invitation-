@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Date Invitation</title>
+    <style>
+        body {
+            background-image: url('C:\\Users\\HP\\OneDrive\\Desktop\\New folder\\cute.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+            color: #ff0000; /* Red text color */
+        }
+
+        h1 {
+            color: #ff0000; /* Red color for the heading */
+            margin-top: 40vh;
+        }
+
+        .heart-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #ff0000; /* Red background color for the buttons */
+            border: none;
+            color: #ffffff; /* White text color for the buttons */
+            border-radius: 50%; /* Creates a circular shape */
+            display: inline-block; /* Ensures buttons appear inline */
+        }
+
+        #niceTryText, #gmailLink {
+            display: none; /* Hide both "Nice try" text and Gmail link initially */
+        }
+
+        .show {
+            display: block !important; /* Show the elements with the "show" class */
+        }
+    </style>
+</head>
+<body>
+    <h1>Would you like to join me for a date?</h1>
+    <button id="yesButton" onclick="window.location.href='https://docs.google.com/document/d/1t0YQrhbaH6RruPgmFbdfpXkEg6LEEEWLIDifzXHSVBM/edit?usp=sharing'" class="heart-button">&#10084; Yes</button>
+    <button id="noButton" onclick="showNiceTryText()" class="heart-button">&#10084; No</button>
+    <div id="niceTryText" class="nice-try-text">Why not, huh? 😢</div>
+    <a href="mailto:gunjantolwani3@gmail.com" id="gmailLink" class="gmail-link">gunjantolwani3@gmail.com</a>
+    <script src="script.js"></script>
+    <script>
+        function showNiceTryText() {
+            document.getElementById('niceTryText').classList.add('show');
+            document.getElementById('gmailLink').classList.add('show');
+        }
+    </script>
+</body>
+</html>
